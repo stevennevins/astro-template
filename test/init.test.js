@@ -1,5 +1,5 @@
 import { expect } from "@playwright/test";
-import { testWithWallet as test } from "./walletTest";
+import { testWithWallet as test } from "./helpers/walletTest";
 
 test.describe(`when the test environment is initialized`, () => {
 	test("should open, test page", async ({ page }) => {

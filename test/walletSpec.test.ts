@@ -1,6 +1,6 @@
 import { expect } from '@playwright/test';
 import { MetaMaskWallet } from '@tenkeylabs/dappwright';
-import { testWithWallet as test } from './walletTest';
+import { testWithWallet as test } from './helpers/walletTest';
 
 test.describe('when interacting with the wallet', () => {
   test('should lock and unlock', async ({ wallet }) => {
