@@ -3,6 +3,7 @@ import { MetaMaskWallet } from "@tenkeylabs/dappwright";
 
 export default defineConfig({
 	workers: 1, // Run serially to avoid browser session collisions
+	testDir: "./test/e2e",
 	fullyParallel: false,
 	use: {
 		headless: true,

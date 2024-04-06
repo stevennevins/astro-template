@@ -8,7 +8,9 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "test": "playwright test"
+    "test:dapp": "playwright test",
+    "test": "vitest test",
+    "test:all": "npm run test:dapp && npm test"
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.0",
@@ -29,6 +31,7 @@
     "eslint-plugin-astro": "^0.33.1",
     "playwright-core": "^1.41.1",
     "prettier": "^3.2.5",
-    "prettier-plugin-astro": "^0.13.0"
+    "prettier-plugin-astro": "^0.13.0",
+    "vitest": "^1.4.0"
   }
 }
